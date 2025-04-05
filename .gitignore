@@ -1,62 +1,55 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-xcuserdata/
-
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
-.build/
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+        echo "# Xcode" > .gitignore
+        echo "#" >> .gitignore
+        echo "# Swift Template: https://github.com/github/gitignore/blob/main/Swift.gitignore" >> .gitignore
+        echo "# Xcode Template: https://github.com/github/gitignore/blob/main/Global/Xcode.gitignore" >> .gitignore
+        echo "" >> .gitignore
+        echo "## User settings" >> .gitignore
+        echo "xcuserdata/" >> .gitignore
+        echo "" >> .gitignore
+        echo "## Build generated" >> .gitignore
+        echo "build/" >> .gitignore
+        echo "DerivedData/" >> .gitignore
+        echo "" >> .gitignore
+        echo "## Various settings" >> .gitignore
+        echo "*.pbxuser" >> .gitignore
+        echo "!default.pbxuser" >> .gitignore
+        echo "*.mode1v3" >> .gitignore
+        echo "!default.mode1v3" >> .gitignore
+        echo "*.mode2v3" >> .gitignore
+        echo "!default.mode2v3" >> .gitignore
+        echo "*.perspectivev3" >> .gitignore
+        echo "!default.perspectivev3" >> .gitignore
+        echo "*.xcscheme" >> .gitignore
+        echo "!default.xcscheme" >> .gitignore
+        echo "" >> .gitignore
+        echo "## Other" >> .gitignore
+        echo "*.moved-aside" >> .gitignore
+        echo "*.xcodeproj/project.xcworkspace" >> .gitignore
+        echo "*.xcodeproj/xcshareddata/" >> .gitignore
+        echo "" >> .gitignore
+        echo "# Swift Package Manager" >> .gitignore
+        echo "#" >> .gitignore
+        echo "# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies." >> .gitignore
+        echo "# Packages/" >> .gitignore
+        echo ".build/" >> .gitignore
+        echo "*.xcodeproj" >> .gitignore # プロジェクトファイル自体は必要なのでこの行は場合により削除検討だが、まずはこのまま
+        echo "*.xcworkspace" >> .gitignore # 同上
+        echo "" >> .gitignore
+        echo "# CocoaPods" >> .gitignore
+        echo "Pods/" >> .gitignore
+        echo "" >> .gitignore
+        echo "# Carthage" >> .gitignore
+        echo "Carthage/Build" >> .gitignore
+        echo "" >> .gitignore
+        echo "# fastlane" >> .gitignore
+        echo "fastlane/report.xml" >> .gitignore
+        echo "fastlane/Preview.html" >> .gitignore
+        echo "fastlane/screenshots" >> .gitignore
+        echo "fastlane/test_output" >> .gitignore
+        echo "" >> .gitignore
+        echo "# Playgrounds" >> .gitignore
+        echo "timeline.xctimeline" >> .gitignore
+        echo "playground.xcworkspace" >> .gitignore
+        echo "" >> .gitignore
+        echo "# macOS" >> .gitignore
+        echo ".DS_Store" >> .gitignore
