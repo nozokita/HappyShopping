@@ -13,7 +13,7 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            text-align: center;
+            /* text-align: center; を削除して左寄せに */
             border: 1px solid #eee;
             padding: 2em;
             border-radius: 8px;
@@ -21,6 +21,13 @@
         }
         h1 {
             color: #ff9800; /* オレンジ色 */
+            text-align: center; /* タイトルのみ中央揃え */
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+            margin-top: 2em; /* セクション間のスペース */
         }
         a {
             color: #007bff;
@@ -29,19 +36,39 @@
         a:hover {
             text-decoration: underline;
         }
+        .contact-info { /* 問い合わせ先を少し目立たせる */
+            text-align: center;
+            margin-top: 1.5em;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>ハッピーショッピング サポート</h1>
+
+        <h2>お問い合わせ</h2>
         <p>アプリ「ハッピーショッピング」をご利用いただきありがとうございます。</p>
         <p>
             アプリに関するご意見、ご質問、不具合のご報告などがございましたら、以下のメールアドレスまでお気軽にお問い合わせください。
         </p>
-        <p>
+        <div class="contact-info">
             <strong>お問い合わせ先:</strong> <a href="mailto:nozomu.kitamura@berkeley.edu">nozomu.kitamura@berkeley.edu</a>
+            <p>（通常、数営業日以内に返信いたします）</p>
+        </div>
+
+        <h2>プライバシーポリシー</h2>
+        <p>
+            本アプリケーションは、お客様の個人情報を収集することはありません。
         </p>
-        <p>（通常、数営業日以内に返信いたします）</p>
+        <p>
+            アプリ内で記録されるハイスコアなどのデータは、お客様のデバイス内にのみ保存され、外部に送信されることはありません。
+        </p>
+        <p>
+            お問い合わせ時にメールアドレス等の情報をいただく場合がございますが、これはお問い合わせへの返信目的にのみ利用し、その他の目的で利用することはありません。
+        </p>
+        <p>
+            本プライバシーポリシーは、必要に応じて改定されることがあります。
+        </p>
     </div>
 </body>
 </html>
